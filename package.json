@@ -1,0 +1,24 @@
+{
+  "name": "angularwebsite",
+  "version": "1.0.0",
+  "description": "Website made to learn Node, Git and Angular",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/417026383AT/AngularWebsite.git"
+  },
+  "author": "Alejandro Trejo Reséndiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/417026383AT/AngularWebsite/issues"
+  },
+  "homepage": "https://github.com/417026383AT/AngularWebsite#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
