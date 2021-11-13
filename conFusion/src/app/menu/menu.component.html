@@ -19,7 +19,17 @@
       </mat-grid-tile>
     </mat-grid-list>
   </div>
-  <div fxFlex *ngIf="selectedDish">
+</div>
+
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0">
+
+  <!-- <div fxFlex="40">
     <mat-card>
       <mat-card-header>
         <mat-card-title>
@@ -28,13 +38,35 @@
       </mat-card-header>
       <img mat-card-image src={{selectedDish.image}} alt="{{selectedDish.name">
       <mat-card-content>
-        <p>{{selectedDish.description}}</p>
+          <p>{{selectedDish.description}}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>LIKE</button>
         <button mat-button>SHARE</button>
       </mat-card-actions>
     </mat-card>
-  </div>
+  </div> -->
+
+<app-dishdetail>
+  <!-- <div fxFlex="40">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>Comments </h3>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-list *ngIf="DishdetailComponent.dish">
+        <p>{{selectedDish.name | uppercase}}</p>
+      </mat-list>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div> -->
+</app-dishdetail>
+
+
 
 </div>
